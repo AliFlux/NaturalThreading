@@ -1,4 +1,5 @@
-# NaturalThreading - A natural multi-threading library for PHP.
+# NaturalThreading
+# A natural multi-threading library for PHP
 
 ## Introduction
 
@@ -16,7 +17,7 @@ It uses a clever CURL hack to simulate multi-threading, you don't need to instal
 - Easy to use (no class inheritance, etc)
 - Can stream realtime data between threads
 
-## Installation & loading
+## Installation
 
 Just copy the [class.naturalthreading.php](class.naturalthreading.php) into your working path, where it is easily accessible by your PHP script.
 
