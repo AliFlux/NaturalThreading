@@ -1,0 +1,20 @@
+{
+    "name": "aliflux/naturalthreading",
+    "type": "library",
+    "description": "Natural multi-threading library for PHP",
+    "authors": [
+        {
+            "name": "Ali Ashraf",
+            "email": "aliashraf@ieee.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.0.0"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "classmap": ["class.naturalthreading.php"]
+    },
+    "license": "LGPL-2.1"
+}

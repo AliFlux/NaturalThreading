@@ -1,0 +1,39 @@
+<!DOCTYPE html><html><head lang='en-US'>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'></script>
+<script src="https://raw.github.com/ilinsky/xmlhttprequest/master/XMLHttpRequest.js"></script>
+
+<script>
+
+var oXMLHttpRequest = new XMLHttpRequest;
+	oXMLHttpRequest.open("GET", "remote.php", true);
+	oXMLHttpRequest.setRequestHeader("Icy-Metadata", "1");
+	oXMLHttpRequest.send(null);
+var lastLength = 0;
+var off = false;
+
+
+var pollTimer = setInterval(function() {
+	var response = (oXMLHttpRequest.responseText);
+
+	if(response) {
+		if(response.length > lastLength) {
+			var msg = response.substr(lastLength, response.length - lastLength);
+			lastLength = response.length;
+
+			$("body").append(msg);   
+		}
+	}
+	if(off) {
+		clearInterval(pollTimer);
+	}
+}, 250);
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
