@@ -60,7 +60,7 @@ Browsers do not directly allow realtime data output, so some browser hacks had t
 I used SESSION for realtime thread communication and whitespace stuffing (adding spaces between messages) for realtime output.
 If you want to get realtime messages without whitespace stuffing, use an [output handler](examples/callback.php).
 
-## Paralell downloading
+## Parallel downloading
 
 This project was initially started when I was writing a piece of code that scrapped thousands of URLs, and it was terribly slow. So I decided to use pthread library, but my client's shared host could not allow it. So I decided to write this tiny hack that worked on shared hosts as well, and it instantly increased the download performance by 10x! Check out the parallel  downloading [example](examples/download.php) that illustrates this.
 
