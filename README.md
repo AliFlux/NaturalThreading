@@ -1,5 +1,7 @@
 # NaturalThreading
-# A natural multi-threading library for PHP
+#### A natural multi-threading library for PHP
+
+![NaturalThreading](https://raw.github.com/AliFlux/NaturalThreading/master/examples/images/naturalthreading.png)
 
 ## Introduction
 
